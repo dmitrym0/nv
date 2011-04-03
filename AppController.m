@@ -1415,6 +1415,14 @@ terminateApp:
 	}
 }
 
+- (void)writeString:(NSString*)string
+{
+	if (string) {
+		[textView insertText:string];
+	}
+}
+
+
 - (void)searchForString:(NSString*)string {
 	
 	if (string) {

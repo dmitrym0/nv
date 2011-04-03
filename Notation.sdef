@@ -10,5 +10,11 @@
 				<type type="text" name="searchTerm"/>
 			</direct-parameter>
 		</command>
+		<command name="write" code="nvsswrte" description="Write text at cursor">
+			<cocoa class="WriteCommand"/>
+			<direct-parameter>
+				<type type="text" name="typeString"/>
+			</direct-parameter>
+		</command>
 	</suite>
 </dictionary>
