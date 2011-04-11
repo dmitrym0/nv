@@ -98,6 +98,7 @@ void outletObjectAwoke(id sender);
 
 - (IBAction)fieldAction:(id)sender;
 - (NoteObject*)createNoteIfNecessary;
+- (NSString*)deleteSelection;
 - (void)writeString:(NSString*)string;
 - (void)searchForString:(NSString*)string;
 - (NSUInteger)revealNote:(NoteObject*)note options:(NSUInteger)opts;

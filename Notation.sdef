@@ -16,5 +16,10 @@
 				<type type="text" name="typeString"/>
 			</direct-parameter>
 		</command>
+		<command name="deleteSelection" code="nvssdelc" description="Delete selection">
+			<cocoa class="DeleteSelectionCommand"/>
+			<result type="text" description="Deleted string"/>
+		</command>
+
 	</suite>
 </dictionary>

@@ -1422,6 +1422,24 @@ terminateApp:
 	}
 }
 
+-(NSString*)deleteSelection
+{
+	NSArray* selections = [textView selectedRanges];
+	NSMutableArray* cutStrings = [[[NSMutableArray alloc] init] autorelease];
+	for (id range in selections)
+	{
+		NSLog(@"Range: %@", NSStringFromRange([range rangeValue]));
+		[cutStrings addObject:[[textView textStorage] attributedSubstringFromRange:[range rangeValue]]];
+		[[textView textStorage] deleteCharactersInRange:[range rangeValue]];
+	}
+	
+	
+	// only expect one range for now.
+	NSString* cutSelectionSimpleString = [[cutStrings objectAtIndex:0] string];
+	NSLog(@"Returning %@", cutSelectionSimpleString);
+	return cutSelectionSimpleString;
+}
+
 
 - (void)searchForString:(NSString*)string {
 	

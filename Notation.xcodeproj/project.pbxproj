@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AACC2301348F80800A50EF6 /* WriteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AACC22F1348F80800A50EF6 /* WriteCommand.m */; };
+		0AACC2D81349962400A50EF6 /* DeleteSelectionCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AACC2D71349962400A50EF6 /* DeleteSelectionCommand.m */; };
 		210A10690B66720F005BE981 /* BookmarksTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 210A10670B66720F005BE981 /* BookmarksTable.m */; };
 		210C07530B6BF0A2005D23A8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 210C07230B6BF0A1005D23A8 /* WebKit.framework */; };
 		210D88CB12FE658B00ED7730 /* 使用概览.nvhelp in Resources */ = {isa = PBXBuildFile; fileRef = 210D88C312FE658B00ED7730 /* 使用概览.nvhelp */; };
@@ -217,6 +218,8 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AACC22E1348F80800A50EF6 /* WriteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteCommand.h; sourceTree = "<group>"; };
 		0AACC22F1348F80800A50EF6 /* WriteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteCommand.m; sourceTree = "<group>"; };
+		0AACC2D61349962400A50EF6 /* DeleteSelectionCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteSelectionCommand.h; sourceTree = "<group>"; };
+		0AACC2D71349962400A50EF6 /* DeleteSelectionCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSelectionCommand.m; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		210A10660B66720F005BE981 /* BookmarksTable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BookmarksTable.h; sourceTree = "<group>"; };
 		210A10670B66720F005BE981 /* BookmarksTable.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = BookmarksTable.m; sourceTree = "<group>"; };
@@ -699,6 +702,8 @@
 				57F27FB81197407400C63ACF /* SearchCommand.m */,
 				0AACC22E1348F80800A50EF6 /* WriteCommand.h */,
 				0AACC22F1348F80800A50EF6 /* WriteCommand.m */,
+				0AACC2D61349962400A50EF6 /* DeleteSelectionCommand.h */,
+				0AACC2D71349962400A50EF6 /* DeleteSelectionCommand.m */,
 				21A3913812EB4C2F00CEB5F0 /* Spaces.h */,
 				21A3913912EB4C2F00CEB5F0 /* Spaces.c */,
 			);
@@ -1315,6 +1320,7 @@
 				212897E71330030100380B64 /* NSAppleEventDescriptor-Extensions.m in Sources */,
 				21447B6F133BFE1E00ACC1A7 /* ExternalEditorListController.m in Sources */,
 				0AACC2301348F80800A50EF6 /* WriteCommand.m in Sources */,
+				0AACC2D81349962400A50EF6 /* DeleteSelectionCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
