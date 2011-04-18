@@ -1440,6 +1440,23 @@ terminateApp:
 	return cutSelectionSimpleString;
 }
 
+- (void)goToArticlePosition:(int) pos
+{
+	NSRange range;
+
+	if (pos == 0)
+	{
+		range = NSMakeRange(0,0);
+	} 
+	else if (pos == -1) 
+	{
+		range = NSMakeRange([[textView string] length], 0 );
+	}
+	
+	[textView setSelectedRange: range];
+
+}
+
 
 - (void)searchForString:(NSString*)string {
 	

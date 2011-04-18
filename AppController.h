@@ -101,6 +101,7 @@ void outletObjectAwoke(id sender);
 - (NSString*)deleteSelection;
 - (void)writeString:(NSString*)string;
 - (void)searchForString:(NSString*)string;
+- (void)goToArticlePosition:(int) pos;
 - (NSUInteger)revealNote:(NoteObject*)note options:(NSUInteger)opts;
 - (BOOL)displayContentsForNoteAtIndex:(int)noteIndex;
 - (void)processChangedSelectionForTable:(NSTableView*)table;

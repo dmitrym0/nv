@@ -16,10 +16,15 @@
 				<type type="text" name="typeString"/>
 			</direct-parameter>
 		</command>
-		<command name="deleteSelection" code="nvssdelc" description="Delete selection">
+		<command name="deleteSelection" code="nvssdelc" description="Delete selection and return it">
 			<cocoa class="DeleteSelectionCommand"/>
 			<result type="text" description="Deleted string"/>
 		</command>
-
+		<command name="goToArticleTop" code="nvssgtat" description="Go to the top of the current article">
+			<cocoa class="GoToArticleTopCommand"/>
+		</command>
+		<command name="goToArticleBottom" code="nvssgtab" description="Go to the bottom of the current article">
+			<cocoa class="GoToArticleBottomCommand"/>
+		</command>
 	</suite>
 </dictionary>
